@@ -1,0 +1,15 @@
+# 源的名字（不能和其他重复）
+[local]
+name=CentOS7.9-local
+
+#步骤2中挂载镜像创建的目录
+baseurl=file:///run/media/root/CentOS\ 7\ x86_64
+
+#启动yum源： 1-启用 0-不启用
+enabled=1 
+
+#安全检测：  1-开启 0-不开启
+gpgcheck=0
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+
+priority=1

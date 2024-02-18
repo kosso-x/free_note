@@ -1,0 +1,93 @@
+# 权限稽核项目更新手册
+
+## 项目目录结构
+
+![权限稽核项目](images/aas.png)
+
+> **aas**： 项目目录，每次都是更新它  
+> **/opt/aas-app/aas**： 项目目录（经常说 "到项目目录下" 就是 cd /opt/aas-app/aas）  
+> **aas_importer**： 每天系统导入数据的代码，测试用不到  
+> **backups**： 旧的代码的备份的地方（每次更新执行的 mv aas backups/aas-20220517 就是把旧代码放到这里）  
+> **db_backups**： 数据库每天的备份文件，还原数据库要用到  
+> **logs**： 日志存放的文件，看日志就是看这里  
+> **packages**： 每次更新前包要放到这里  
+> **scripts**： 项目启动脚本存放的文件夹  
+
+## 基本操作
+
+* 更包（在家全执行，在公司上传完包之后从9开始）
+  1. 打开终端，mac使用sftp传包
+  2. 每次更新前都把包下载到 "下载" 那里
+  3. sftp连接
+     `sftp root@192.168.1.11`
+  4. 输入密码
+     `Aa111111`
+  5. 传包
+     `put /Users/xiongmao/Downloads/包名 /opt/aas-app/packages`
+  6. 退出sftp
+     `exit`
+  7. ssh连接服务器
+     `ssh root@192.168.1.11`
+  8. 输入密码
+     `Aa111111`
+  9. 关闭服务器的puma
+     `systemctl stop puma`
+  10. 关闭服务器的sidekiq
+      `systemctl stop sidekiq`
+  11. 进入项目目录（/opt/aas-app/aas）的父目录
+      `cd /opt/aas-app`
+  12. 解压包（包会被解压到aas的同级目录下）
+      `unzip packages/包名`
+  13. 备份原代码文件到backups文件下
+      `mv aas backups/aas-时间戳`
+  14. 新代码文件替换
+      `mv account_audit_system aas`
+  15. 启动项目
+      `cd scripts`
+      `./migrate.sh`
+  16. 退出ssh
+      `exit`
+* 还原数据库（在家全执行，在公司从3开始）
+  1. ssh连接服务器
+     `ssh root@192.168.1.11`
+  2. 输入密码
+     `Aa111111`
+  3. 进入项目数据库备份的目录
+     `cd /opt/aas-app/db_backups`
+  4. 查看备份的压缩文件
+     `ll 或者 ls`
+  5. 解压最近备份的文件（看时间戳），解压后是.sql结尾的mysql文件
+     `gunzip 文件名`
+  6. 输出解压后的文件的路径（首先要复制解压后的文件的名字）
+     ```echo `pwd`/复制的文件名```
+  7. 复制6的输出结果（不执行）
+  8. 到项目目录下
+     `cd /opt/aas-app/aas`
+  9. 进入数据库
+     `rails db`
+  10. 输入数据库密码
+      `123456`
+  11. 导入数据
+      `source 7复制的内容`
+  12. 等待数据导入
+  13. 导入完成后退出
+      `exit`
+* 备份数据库（在家全执行，在公司从3开始）
+  1. ssh连接服务器
+     `ssh root@192.168.1.11`
+  2. 输入密码
+     `Aa111111`
+  3. 到项目目录下
+     `cd /opt/aas-app/aas`
+  4. 执行备份任务，会自动备份到/opt/aas-app/db_backups/目录
+     `rails db:backup`
+* 关于修改配置文件(了解就好，别被问到，不用你改)
+  1. ssh连接服务器
+     `ssh root@192.168.1.11`
+  2. 输入密码
+     `Aa111111`
+  3. 到项目目录下
+     `cd /opt/aas-app/aas`
+  4. 进入rails的控制台
+     `rails c`
+  5. 已经进入控制台，在这里修改主要是Setting的一些东西
