@@ -1,0 +1,50 @@
+# version: '3'
+services:
+  mall-app:
+    build: ./mall
+    ports:
+      - "8080:8080"
+    command: "go run /go-pro/mall/main.go"
+    depends_on:
+      - mysql
+      - redis
+    # logging:
+    #   driver: syslog
+    #   options:
+    #     syslog-address: "tcp://192.168.0.1:22"
+    networks:
+      - mall-net
+
+    volumes:
+      - type: bind
+        source: /dok_pros/mall-app/mall
+        target: /go-pro/mall
+      - type: volume
+        source: mall-log
+        target: /go-pro/mall/var/log
+  redis:
+    image: redis:latest
+    networks:
+      mall-net:
+        aliases:
+        - redis2
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: 123456
+    volumes:
+      - type: bind
+        source: /dok_pros/mall-app/sql
+        target: /sql
+    networks:
+      mall-net:
+        aliases:
+        - mysql22
+
+volumes:
+  mall-log:
+
+networks:
+  mall-net:
+
