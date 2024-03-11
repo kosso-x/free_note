@@ -291,6 +291,8 @@
 
   # 显示 NetworkManager 是否接管网络设置：
   nmcli networking / nmcli n
+  # 手动开启接管
+  nmcli network on
   # 查看网络连接状态
   nmcli n connectivity / nmcli n c
   # 开启网络连接
