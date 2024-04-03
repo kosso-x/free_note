@@ -150,6 +150,10 @@
   },
   "active": "05790e934ffeb326",
   "lastOpenFiles": [
+    "logseq/bak/logseq/config/2024-04-03T16_31_58.031Z.Desktop.edn",
+    "logseq/bak/logseq/config/2024-04-03T16_31_48.688Z.Desktop.edn",
+    "logseq/bak/logseq/config",
+    "logseq/bak/logseq",
     "pages/contents.md",
     "logseq/bak/aas_project/poc测试/2024-04-03T16_28_30.028Z.Desktop.md",
     "logseq/bak/aas_project/poc测试",
@@ -193,10 +197,6 @@
     "未命名.canvas",
     "未命名 1.canvas",
     "().md",
-    "attachments/docker/mall-dockerfile",
-    "attachments/docker/mall-compose/docker-compose.md",
-    "attachments/docker/mall-compose",
-    "attachments/docker",
-    "未命名.md"
+    "attachments/docker/mall-compose/docker-compose.md"
   ]
 }

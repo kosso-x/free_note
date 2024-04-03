@@ -10,7 +10,7 @@
  ;; Available options:
  ;; - :now for NOW/LATER style (default)
  ;; - :todo for TODO/DOING style
- :preferred-workflow :todo
+ :preferred-workflow :now
 
  ;; Exclude directories/files.
  ;; Example usage:
@@ -46,7 +46,7 @@
 
  ;; Display all lines of a block when referencing ((block)).
  ;; Default value: false
- :ui/show-full-blocks? true
+ :ui/show-full-blocks? false
 
  ;; Automatically expand block references when zooming in.
  ;; Default value: true
@@ -418,5 +418,4 @@
  ;;   - :triple-lowbar (default)
  ;;      ;use triple underscore `___` for slash `/` in page title
  ;;      ;use Percent-encoding for other invalid characters
- :file/name-format :triple-lowbar
- :editor/logical-outdenting? true}
+ :file/name-format :triple-lowbar}
