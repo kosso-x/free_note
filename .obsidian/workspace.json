@@ -150,7 +150,9 @@
   },
   "active": "05790e934ffeb326",
   "lastOpenFiles": [
+    "algo/邻接表.png",
     "algo/Algo.md",
+    "algo/有权图和无权图.png",
     "面试/面试笔记.md",
     "algo/数组 vs 链表.png",
     "面试/Redolog的执行流程.png",
@@ -161,7 +163,6 @@
     "面试/Btree索引.png",
     "面试/TCPIP协议.png",
     "面试/数据在各层之间的传递过程.png",
-    "面试/OSIq七层模型.png",
     "docker/Docker.md",
     "面试",
     "十大大声.md",
