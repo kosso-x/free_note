@@ -4,22 +4,26 @@
     "type": "split",
     "children": [
       {
-        "id": "76a7169d81ed7c85",
+        "id": "0fbaca5d5d84ae45",
         "type": "tabs",
         "children": [
           {
-            "id": "864ff5cb904fee65",
+            "id": "b4bab5efafb99177",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "面试/微服务.md",
-                "mode": "source",
-                "source": false
+                "file": "测试mind.canvas",
+                "viewState": {
+                  "x": 5,
+                  "y": 1416.5,
+                  "zoom": -1.2665367017401012
+                }
               }
             }
           }
-        ]
+        ],
+        "stacked": true
       }
     ],
     "direction": "vertical"
@@ -85,7 +89,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "面试/微服务.md",
+                "file": "测试mind.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,8 +106,8 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "面试/微服务.md",
-                "linksCollapsed": false,
+                "file": "测试mind.canvas",
+                "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -125,17 +129,24 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "面试/微服务.md"
+                "file": "测试mind.canvas"
               }
+            }
+          },
+          {
+            "id": "267461b34392b5ae",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,14 +160,14 @@
       "publish:发布更改": false
     }
   },
-  "active": "864ff5cb904fee65",
+  "active": "6e43410eb30e94d8",
   "lastOpenFiles": [
+    "测试mind.canvas",
+    "面试/微服务.md",
     "centos/centos.md",
     "centos",
     "docker/Docker.md",
     "docker",
-    "未命名.canvas",
-    "面试/微服务.md",
     "面试/服务端发现模式.png",
     "面试/服务发现的功能.png",
     "面试/后台架构发展.png",
@@ -199,7 +210,6 @@
     "算法/排序算法.png",
     "api/api.md",
     "权限管理系统/更新手册.md",
-    "权限管理系统/poc测试.md",
-    "权限管理系统/巡检.md"
+    "权限管理系统/poc测试.md"
   ]
 }
