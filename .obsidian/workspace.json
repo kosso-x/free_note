@@ -151,6 +151,8 @@
   },
   "active": "864ff5cb904fee65",
   "lastOpenFiles": [
+    "centos/centos.md",
+    "centos",
     "docker/Docker.md",
     "docker",
     "未命名.canvas",
@@ -178,7 +180,6 @@
     "pages",
     "journals",
     "logseq/config.edn",
-    "logseq",
     "linux/Docker.md",
     "linux/系统设置.md",
     "linux/挂载磁盘.md",
@@ -199,7 +200,6 @@
     "api/api.md",
     "权限管理系统/更新手册.md",
     "权限管理系统/poc测试.md",
-    "权限管理系统/巡检.md",
-    "权限管理系统/项目启动.md"
+    "权限管理系统/巡检.md"
   ]
 }
