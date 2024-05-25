@@ -1,19 +1,19 @@
 ## 安装
-* 桌面版：[https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)
+* 桌面版：[https://www.docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop)  
 * 服务器版：[https://docs.docker.com/engine/install/#server](https://docs.docker.com/engine/install/#server)
 ## 换源
 配置文件：  /etc/docker/daemon.json   没有就创建
 ``` json
-{
-	"registry-mirrors": [
-		"https://hub-mirror.c.163.com",
-		"https://mirror.baidubce.com"
+{ 
+	"registry-mirrors": [ 
+		"https://hub-mirror.c.163.com", 
+		"https://mirror.baidubce.com" 
   ]
 }
 ```
 重启docker
 ``` bash
-systemctl daemon-reload
+systemctl daemon-reload 
 systemctl restart docker
 ```
 查看修改后的信息
@@ -28,16 +28,16 @@ docker info
 * 删除镜像 ``` docker rmi 镜像ID ```
 * 删除所有镜像 ``` docker rmi `docker images -q` ```
 * 运行 | 停止 | 删除 容器 ``` docker start | stop | rm 容器名 | 容器ID ```
-* 运行镜像
-	```
+* 运行镜像 
+	``` 
 	docker run -d \
 		-p 8000:8000 \
 		--name 容器命名 \
 		镜像名 | 镜像ID \
-		启动命令
+		启动命令  
 	```
 * 运行镜像本地文件挂载到镜像
-	```
+	``` 
 	docker run -d \
 		-p 8080:8080 \
 		--name mall2 \

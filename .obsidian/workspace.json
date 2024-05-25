@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "b7cbf73620efcb16",
+        "id": "76a7169d81ed7c85",
         "type": "tabs",
         "children": [
           {
-            "id": "05790e934ffeb326",
+            "id": "864ff5cb904fee65",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "algo/Algo.md",
+                "file": "面试/微服务.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "algo/Algo.md",
+                "file": "面试/微服务.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "algo/Algo.md",
+                "file": "面试/微服务.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "algo/Algo.md"
+                "file": "面试/微服务.md"
               }
             }
           }
@@ -139,6 +139,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "workspaces:管理工作区布局": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -148,55 +149,57 @@
       "publish:发布更改": false
     }
   },
-  "active": "05790e934ffeb326",
+  "active": "864ff5cb904fee65",
   "lastOpenFiles": [
-    "logseq/bak/logseq/config/2024-04-03T16_49_25.461Z.Desktop.edn",
-    "logseq/bak/logseq/config/2024-04-03T16_31_58.031Z.Desktop.edn",
-    "logseq/bak/logseq/config/2024-04-03T16_31_48.688Z.Desktop.edn",
-    "logseq/bak/logseq/config",
-    "logseq/bak/logseq",
-    "pages/contents.md",
-    "logseq/bak/aas_project/poc测试/2024-04-03T16_28_30.028Z.Desktop.md",
-    "logseq/bak/aas_project/poc测试",
-    "logseq/bak/aas_project",
-    "journals/2024_04_04.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_25.936Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_18.489Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_15.362Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_12.334Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_09.333Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_06.297Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_30_03.010Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_29_49.361Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_29_38.237Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_29_31.332Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_29_28.410Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_29_23.087Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_28_28.368Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_28_24.245Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_28_19.730Z.Desktop.md",
-    "logseq/bak/algo/Algo/2024-04-03T05_28_10.502Z.Desktop.md",
-    "logseq/bak/algo/Algo",
-    "logseq/bak/algo",
-    "logseq/bak",
-    "algo/邻接表.png",
-    "algo/Algo.md",
-    "algo/有权图和无权图.png",
-    "面试/面试笔记.md",
-    "algo/数组 vs 链表.png",
-    "面试/Redolog的执行流程.png",
-    "algo/数据结构.png",
-    "algo",
-    "面试/channl环形数组好处.png",
-    "面试/Redolog 的记录方式.png",
-    "面试/Btree索引.png",
-    "面试/TCPIP协议.png",
-    "面试/数据在各层之间的传递过程.png",
     "docker/Docker.md",
-    "十大大声.md",
+    "docker",
     "未命名.canvas",
+    "面试/微服务.md",
+    "面试/服务端发现模式.png",
+    "面试/服务发现的功能.png",
+    "面试/后台架构发展.png",
+    "未命名思维导图.md",
+    "未命名.md",
+    "算法/Algo.md",
+    "算法/有权图和无权图.png",
+    "README.md",
+    "2024-05-24.md",
+    "未命名 3.canvas",
+    "未命名 2.canvas",
     "未命名 1.canvas",
-    "().md",
-    "attachments/docker/mall-compose/docker-compose.md"
+    "seqs/journals/2024_05_24.md",
+    "seqs/journals/2024_05_20.md",
+    "linux/SMTP-通过 telnet 命令验证邮件服务器（mail）配置信息.pdf",
+    "seqs",
+    "新建文件夹 (2)",
+    "新建文件夹",
+    "logseq/custom.css",
+    "pages/contents.md",
+    "pages",
+    "journals",
+    "logseq/config.edn",
+    "logseq",
+    "linux/Docker.md",
+    "linux/系统设置.md",
+    "linux/挂载磁盘.md",
+    "linux/images/ln.png",
+    "linux/images/df -h.png",
+    "linux/images/反向代理.png",
+    "goframe/Goframe.md",
+    "linux/下载.md",
+    "面试/面试笔记.md",
+    "linux/压缩解压.md",
+    "linux/gcc 更新版本.md",
+    "linux/Git解决冲突.md",
+    "linux/nginx.md",
+    "linux/node下载.md",
+    "算法/回溯算法.png",
+    "算法/搜索算法.png",
+    "算法/排序算法.png",
+    "api/api.md",
+    "权限管理系统/更新手册.md",
+    "权限管理系统/poc测试.md",
+    "权限管理系统/巡检.md",
+    "权限管理系统/项目启动.md"
   ]
 }
